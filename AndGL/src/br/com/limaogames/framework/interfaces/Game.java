@@ -76,8 +76,11 @@ public interface Game extends Android {
     
     /**
      * Realiza login no Facebook utilizando a API do próprio Facebook.
+     * 
+     * @param fbAppId
+     * @param permissions
      */
-    public void loginFacebook();
+    public void loginFacebook(String fbAppId, String permissions);
     
 //    /**
 //     * Altera o estado do jogo para 'PAUSED'.

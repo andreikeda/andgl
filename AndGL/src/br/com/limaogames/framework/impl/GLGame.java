@@ -211,4 +211,9 @@ public abstract class GLGame extends Activity implements Game, Renderer {
     @Override
     public void openDialog(int layoutId) {
     }
+    
+    @Override
+    public void loginFacebook(String fbAppId, String permissions) {
+    	
+    }
 }
