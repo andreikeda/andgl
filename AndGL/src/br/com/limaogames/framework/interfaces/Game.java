@@ -6,7 +6,7 @@ import br.com.limaogames.framework.impl.GLGraphics;
 /**
  * Interface para prover as principais funcionalidades do aplicativo.
  * 
- * @author André <br />
+ * @author Andrï¿½ <br />
  * <b>Email:</b> andreikeda@limaogames.com.br <br />
  * created on: 31/07/2013
  * @version 1.0
@@ -75,32 +75,17 @@ public interface Game extends Android {
     public Screen getStartScreen();
     
     /**
-     * Realiza login no Facebook utilizando a API do próprio Facebook.
-     * 
-     * @param fbAppId
-     * @param permissions
+     * Altera o estado do jogo para 'PAUSED'.
      */
-    public void loginFacebook(String fbAppId, String permissions);
+    public void pause();
     
-//    /**
-//     * Altera o estado do jogo para 'PAUSED'.
-//     */
-//    public void pause();
-    
-    /**
-     * Publica mensagem na timeline do Facebook.
-     * 
-     * @param message - String mensagem a ser publicada.
-     */
-	public void publishFeed(String message);
+	/**
+	 * Altera o estado do jogo para 'RESTARTED'.
+	 */
+	public void restart();
 	
-//	/**
-//	 * Altera o estado do jogo para 'RESTARTED'.
-//	 */
-//	public void restart();
-//	
-//	/**
-//	 * Altera o estado do jogo para 'RUNNING'.
-//	 */
-//	public void resume();
+	/**
+	 * Altera o estado do jogo para 'RUNNING'.
+	 */
+	public void resume();
 }

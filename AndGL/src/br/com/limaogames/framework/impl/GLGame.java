@@ -24,9 +24,9 @@ import br.com.limaogames.framework.interfaces.Input;
 import br.com.limaogames.framework.util.Display;
 
 /**
- * Classe abstrata para criação da {@link Activity} principal ("core" do jogo) utilizando openGL.
+ * Classe abstrata para criaï¿½ï¿½o da {@link Activity} principal ("core" do jogo) utilizando openGL.
  * 
- * @author André <br />
+ * @author Andrï¿½ <br />
  * <b>Email:</b> andreikeda@limaogames.com.br <br />
  * created on: 31/07/2013
  * @version 1.0
@@ -49,7 +49,7 @@ public abstract class GLGame extends Activity implements Game, Renderer {
 	@Override 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                              WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -61,8 +61,8 @@ public abstract class GLGame extends Activity implements Game, Renderer {
         glGraphics = new GLGraphics(glView);
         fileIO = new AndroidFileIO(getAssets());
         audio = new AndroidAudio(this);
-//        input = new AndroidInput(this, glView, Display.scaleX, Display.scaleY);
-        input = new AndroidInput(this, glView, 1, 1);
+        input = new AndroidInput(this, glView, Display.scaleX, Display.scaleY);
+//        input = new AndroidInput(this, glView, 1, 1);
         PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = powerManager.newWakeLock(PowerManager.FULL_WAKE_LOCK, "GLGame");        
     }
@@ -210,10 +210,5 @@ public abstract class GLGame extends Activity implements Game, Renderer {
     
     @Override
     public void openDialog(int layoutId) {
-    }
-    
-    @Override
-    public void loginFacebook(String fbAppId, String permissions) {
-    	
     }
 }

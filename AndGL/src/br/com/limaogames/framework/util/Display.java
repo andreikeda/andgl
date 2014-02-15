@@ -9,7 +9,7 @@ import android.util.DisplayMetrics;
 /**
  * Class to set display variables and cover events bounds.
  * 
- * @author André Ikeda<br />
+ * @author Andrï¿½ Ikeda<br />
  * Email: andreikeda87@gmail.com
  *
  */
@@ -103,9 +103,9 @@ public class Display {
 	}
 	
 	/**
-	 * Retorna a nova altura para o objeto utilizando como altura padrão o valor pré-estabelecido por <b>DEFAULT_HEIGHT</b> e a altura do dispositivo.
+	 * Retorna a nova altura para o objeto utilizando como altura padrï¿½o o valor prï¿½-estabelecido por <b>DEFAULT_HEIGHT</b> e a altura do dispositivo.
 	 * 
-	 * @param oldHeight - Float altura padrão da imagem.
+	 * @param oldHeight - Float altura padrï¿½o da imagem.
 	 * @return Float com a nova altura (proporcional) da imagem.
 	 */
 	public static float getResizedImageHeight(float oldHeight) {
@@ -113,9 +113,9 @@ public class Display {
 	}
 	
 	/**
-	 * Retorna a nova largura para o objeto utilizando como largura padrão o valor pré-estabelecido por <b>DEFAULT_WIDTH</b> e a largura do dispositivo.
+	 * Retorna a nova largura para o objeto utilizando como largura padrï¿½o o valor prï¿½-estabelecido por <b>DEFAULT_WIDTH</b> e a largura do dispositivo.
 	 * 
-	 * @param oldWidth - Float largura padrão da imagem.
+	 * @param oldWidth - Float largura padrï¿½o da imagem.
 	 * @return Float com a nova largura (proporcional) da imagem.
 	 */
 	public static float getResizedImageWidth(float oldWidth) {
